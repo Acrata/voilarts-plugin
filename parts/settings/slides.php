@@ -76,6 +76,18 @@ Flow: Demo Workflow
     )
   ));
 
+piklist('field', array(
+    'type' => 'radio',
+    'add_more' => true,
+    'field' => 'my_select',
+    'label' => 'My select',
+    'choices' => array(
+      'first' => 'Primera Choice',
+      'second' => 'Second Choice',
+      'third' => 'Third Choice'
+    )
+  ));
+
   piklist('shared/code-locater', array(
     'location' => __FILE__
     ,'type' => 'Settings Section'

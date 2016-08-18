@@ -1,0 +1,17 @@
+{
+  "name": "voilarts",
+  "homepage": "https://github.com/Acrata/voilarts-plugin",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bxslider-4": "bx-slider.js#^4.2.5"
+  }
+}

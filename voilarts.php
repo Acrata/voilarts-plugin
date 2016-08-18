@@ -15,7 +15,6 @@ Text Domain: voilarts
     // Localisation Support
     //load_theme_textdomain('voilarts', get_template_directory() . '/languages');
 
-
 /**
    * Register a book post type, with REST API support
    *
@@ -82,3 +81,11 @@ add_filter('piklist_admin_pages', 'artist_ex');
 
     return $pages;
   }
+
+//wp_enqueue_script('bxSlider');
+add_action('wp_enqueue_script','register_my_scripts');
+
+function register_my_scripts(){
+wp_register_script('bxSlider', plugin_dir_url(__FILE__) . 'bower_components/bxslider-4/dist/jquery.bxslider.js', array('jquery'));
+wp_enqueue_script('bxSlider');
+}
