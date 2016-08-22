@@ -84,8 +84,13 @@ add_filter('piklist_admin_pages', 'artist_ex');
 
 //wp_enqueue_script('bxSlider');
 add_action('init','register_my_scripts');
+add_action('init','register_my_styles');
 
 function register_my_scripts(){
 wp_register_script('bxSlider', plugin_dir_url(__FILE__) . 'bower_components/bxslider-4/dist/jquery.bxslider.js', array('jquery'));
 wp_enqueue_script('bxSlider');
+}
+function register_my_styles(){
+    wp_register_script('bxStyle', plugin_dir_url(__FILE__) . 'bower_components/bxslider-4/dist/jquery.bxslider.css', array('jquery'));
+    wp_enqueue_script('bxStyle');
 }
